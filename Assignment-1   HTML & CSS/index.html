@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / register</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <img src="./assets/images/nature.avif" alt="Nature" id="nature-icon" width="220px" height="220px">
+           
+            <br><br>
+            
+            <p class="para">
+                Assam, a state with the lush green land of rolling plains and dense forests is considered as the gateway to the north eastern part of India. This magical land of eternal blue hills and beautiful rivers is world renowned for its rich flora and fauna, the world famous one horned rhinoceros and other rare species of wildlife and tea.
+            </p>
+        </div>
+        
+
+        <div class="right">
+            <div id="container">
+                <div id="image-div">
+                    <img src="./assets/images/user_icon.png" alt="User avatar" id="user-icon" width="60px" height="60px">
+                </div>
+                
+                <div id="login-register">
+                    <!-- <a href="#login" class="toggle-btn">Login</a>
+                    <a href="#register" class="toggle-btn">Register</a> -->
+                    
+                    <input type="radio" name="radioGroup" id="login" checked>
+                    <label for="login" class="radio-btn" style="border-top-left-radius: 10px;">Login</label>
+
+                    <input type="radio" name="radioGroup" id="register">
+                    <label for="register" class="radio-btn" style="border-top-right-radius: 10px;">Register</label>
+                    
+
+                    <div class="draggable">
+                        <div id="login-form" class="content">
+                            <input type="text" name="username" id="username" placeholder="Username">
+                            <br>
+                            <input type="password" name="password" id="password" placeholder="Password">
+                            <br>
+                            <button class="submit">Login</button>
+                        </div>
+                        
+                        <div id="register-form" class="content">
+                            <input type="text" name="username" id="username" placeholder="Username">
+                            <br>
+                            <input type="email" name="email" id="email" placeholder="E-mail">
+                            <br>
+                            <input type="password" name="password" id="password" placeholder="Password">
+                            <br>
+                            <button class="submit">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

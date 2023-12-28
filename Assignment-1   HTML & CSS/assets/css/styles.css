@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.left {
+    height: 100vh; 
+    width: 60%; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    background: rgb(91,174,202); 
+    background: linear-gradient(90deg, rgba(25,126,195,1) 0%, rgb(16, 49, 58) 100%);
+}
+
+.right {
+    height: 100vh; 
+    width: 40%; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    border-left: 2px solid orange;
+    background-color: rgb(22, 54, 63);
+}
+
+#nature-icon {
+    border-radius: 50%;
+    border: 2px solid rgb(39, 39, 37);
+}
+
+.para {
+    width: 70%;
+    font-size: 18px;
+    text-align: justify; 
+    overflow: hidden;
+    color: rgb(240, 220, 185);
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 3; 
+}
+
+
+/***** Login/register box styling *****/
+
+#container {
+    width: 260px;
+    position: relative; 
+    border: 1px solid wheat; 
+    border-radius: 10px; 
+    background-color: rgba(140, 138, 138, 0.197); 
+}
+
+#image-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#user-icon {
+    border-radius: 50%; 
+    position: absolute; 
+    top: -35px; 
+    border: 2px solid wheat;
+}
+
+#login-form, #register-form {
+    text-align: center;
+    margin-top: 30px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    background-color: rgb(44, 10, 215);
+    color: #fff;
+}
+
+label {
+    display: inline-block;
+    width: 36.3%;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 17px;
+    cursor: pointer;
+    color: rgb(236, 221, 192);
+    background-color: #323030;
+    border: 1px solid #ccc;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    margin: 10px;
+    margin-top: 10px;
+    width: auto;
+    font-size: 15px; 
+    padding: 7px; 
+    border: none; 
+    border-radius: 5px;
+    background-color: #dddddd;
+}
+
+.submit {
+    width: 100px; 
+    padding: 6px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px; 
+    cursor: pointer;
+    border: 1px solid black; 
+    border-radius: 7px; 
+    background-color: #97aff6;
+}
+
+.submit:hover {
+    background-color: rgb(68, 30, 233);
+    color: #fff;
+}
+
+.content {
+    display: none;
+}
+
+#login:checked ~ .draggable > #login-form, 
+#register:checked ~ .draggable > #register-form {
+    display: block;
+}
+
+
+/***** Responsive styles *****/
+
+@media screen and (max-width: 960px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+}
