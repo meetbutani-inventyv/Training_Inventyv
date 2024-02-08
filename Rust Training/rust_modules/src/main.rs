@@ -4,11 +4,13 @@ mod common_modules;
 mod student;
 /// Employee module contains the task of filtering the employees into 3 different categories
 mod employee;
-
+/// String_task module contains the task related to string
+mod string_task;
 
 fn main() {
     println!("======== Rust Projects ========\n");
 
     // student::main();
-    employee::main();
+    // employee::main();.
+    string_task::main();
 }
