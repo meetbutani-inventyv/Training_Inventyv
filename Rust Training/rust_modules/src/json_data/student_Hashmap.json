@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Aarav Patel",
+    "percentage": 86.6,
+    "grade": "B",
+    "phone": "+91 9876543210",
+    "marks": [
+      85,
+      92,
+      78,
+      90,
+      88
+    ],
+    "city": "Mumbai",
+    "email": "aarav.patel@example.com"
+  },
+  {
+    "phone": "+91 8765432109",
+    "city": "Delhi",
+    "name": "Sanya Sharma",
+    "marks": [
+      75,
+      80,
+      88,
+      79,
+      95
+    ],
+    "email": "sanya.sharma@example.com",
+    "percentage": 83.4,
+    "grade": "B"
+  },
+  {
+    "grade": "B",
+    "marks": [
+      92,
+      89,
+      94,
+      87,
+      80
+    ],
+    "email": "arjun.gupta@example.com",
+    "percentage": 88.4,
+    "name": "Arjun Gupta",
+    "phone": "+91 7456123980",
+    "city": "Bangalore"
+  },
+  {
+    "city": "Kolkata",
+    "marks": [
+      78,
+      85,
+      90,
+      92,
+      88
+    ],
+    "percentage": 86.6,
+    "grade": "B",
+    "name": "Neha Verma",
+    "phone": "+91 9123456780",
+    "email": "neha.verma@example.com"
+  },
+  {
+    "email": "rahul.kumar@example.com",
+    "percentage": 86.8,
+    "name": "Rahul Kumar",
+    "city": "Chennai",
+    "phone": "+91 8309765412",
+    "grade": "B",
+    "marks": [
+      85,
+      88,
+      76,
+      91,
+      94
+    ]
+  },
+  {
+    "email": "aisha.singh@example.com",
+    "phone": "+91 7890123456",
+    "marks": [
+      90,
+      92,
+      85,
+      78,
+      88
+    ],
+    "percentage": 86.6,
+    "grade": "B",
+    "name": "Aisha Singh",
+    "city": "Hyderabad"
+  },
+  {
+    "phone": "+91 9876501234",
+    "name": "Vikram Yadav",
+    "city": "Pune",
+    "marks": [
+      85,
+      80,
+      88,
+      79,
+      95
+    ],
+    "percentage": 85.4,
+    "grade": "B",
+    "email": "vikram.yadav@example.com"
+  },
+  {
+    "grade": "B",
+    "phone": "+91 7012345678",
+    "name": "Anaya Mishra",
+    "city": "Jaipur",
+    "marks": [
+      92,
+      89,
+      94,
+      87,
+      80
+    ],
+    "percentage": 88.4,
+    "email": "anaya.mishra@example.com"
+  },
+  {
+    "name": "Aryan Singh",
+    "phone": "+91 9123456789",
+    "city": "Lucknow",
+    "marks": [
+      78,
+      85,
+      90,
+      92,
+      88
+    ],
+    "percentage": 86.6,
+    "grade": "B",
+    "email": "aryan.singh@example.com"
+  },
+  {
+    "percentage": 86.8,
+    "grade": "B",
+    "name": "Ishita Sharma",
+    "city": "Ahmedabad",
+    "phone": "+91 9876543211",
+    "marks": [
+      85,
+      88,
+      76,
+      91,
+      94
+    ],
+    "email": "ishita.sharma@example.com"
+  }
+]
