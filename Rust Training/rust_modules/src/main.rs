@@ -15,5 +15,6 @@ fn main() {
     // student::main();
     // employee::main();.
     // string_task::main();
-    hashmap::student::main();
+    // hashmap::student::main();
+    hashmap::employee::main();
 }
