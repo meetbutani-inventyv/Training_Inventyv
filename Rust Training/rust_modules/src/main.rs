@@ -8,6 +8,9 @@ mod employee;
 mod string_task;
 /// This module contains the student and employee task's implementation using hashmap
 mod hashmap;
+/// This module contains the table task implementation using lazy_static
+mod lazy_static;
+
 
 fn main() {
     println!("======== Rust Projects ========\n");
@@ -16,5 +19,6 @@ fn main() {
     // employee::main();.
     // string_task::main();
     // hashmap::student::main();
-    hashmap::employee::main();
+    // hashmap::employee::main();
+    lazy_static::main();
 }

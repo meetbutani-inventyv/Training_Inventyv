@@ -1,0 +1,632 @@
+{
+  "height": 920.0,
+  "width": 782.0,
+  "cell_padding": 5.0,
+  "table_margin": 5.0,
+  "rows": [
+    {
+      "r_height": 140.0,
+      "r_width": 782.0,
+      "row_type": "HeaderRow",
+      "font_size": 18.0,
+      "cells": [
+        {
+          "c_height": 112.0,
+          "c_width": 48.875,
+          "value": "Desc\nripti\non(T\nype)",
+          "lines": 4
+        },
+        {
+          "c_height": 84.0,
+          "c_width": 48.875,
+          "value": "Date\n In S\nvc",
+          "lines": 3
+        },
+        {
+          "c_height": 84.0,
+          "c_width": 48.875,
+          "value": "Cost\n/ Bas\nis",
+          "lines": 3
+        },
+        {
+          "c_height": 112.0,
+          "c_width": 48.875,
+          "value": "Prio\nr 17\n9 Bo\nnus",
+          "lines": 4
+        },
+        {
+          "c_height": 84.0,
+          "c_width": 48.875,
+          "value": "Bus. \nUse \nPer.",
+          "lines": 3
+        },
+        {
+          "c_height": 56.0,
+          "c_width": 48.875,
+          "value": "Met\nhod",
+          "lines": 2
+        },
+        {
+          "c_height": 28.0,
+          "c_width": 48.875,
+          "value": "Cv",
+          "lines": 1
+        },
+        {
+          "c_height": 28.0,
+          "c_width": 48.875,
+          "value": "Life",
+          "lines": 1
+        },
+        {
+          "c_height": 56.0,
+          "c_width": 48.875,
+          "value": "Crnt\n. 179",
+          "lines": 2
+        },
+        {
+          "c_height": 84.0,
+          "c_width": 48.875,
+          "value": "Crnt\n. Bo\nnus",
+          "lines": 3
+        },
+        {
+          "c_height": 112.0,
+          "c_width": 48.875,
+          "value": "Prio\nr Re\ng. D\nepr.",
+          "lines": 4
+        },
+        {
+          "c_height": 140.0,
+          "c_width": 48.875,
+          "value": "Crnt\n. De\npr. \nDed\nuc.",
+          "lines": 5
+        },
+        {
+          "c_height": 112.0,
+          "c_width": 48.875,
+          "value": "Next\n Yea\nr De\npr.",
+          "lines": 4
+        },
+        {
+          "c_height": 84.0,
+          "c_width": 48.875,
+          "value": "Prio\nr A\nMT",
+          "lines": 3
+        },
+        {
+          "c_height": 84.0,
+          "c_width": 48.875,
+          "value": "Crnt\n. A\nMT",
+          "lines": 3
+        },
+        {
+          "c_height": 112.0,
+          "c_width": 48.875,
+          "value": "Crnt\n. Am\no. D\nep.",
+          "lines": 4
+        }
+      ]
+    },
+    {
+      "r_height": 220.0,
+      "r_width": 782.0,
+      "row_type": "DataRow",
+      "font_size": 12.0,
+      "cells": [
+        {
+          "c_height": 220.0,
+          "c_width": 48.875,
+          "value": "Asset1 \n- Hous\ne In N\nY(Indi\nan Res\nervatio\nn 5 yea\nr non f\narm pr\noperty",
+          "lines": 10
+        },
+        {
+          "c_height": 44.0,
+          "c_width": 48.875,
+          "value": "01/01/2\n024",
+          "lines": 2
+        },
+        {
+          "c_height": 44.0,
+          "c_width": 48.875,
+          "value": "250,00\n0",
+          "lines": 2
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 66.0,
+          "c_width": 48.875,
+          "value": "100 M\nACRS \n150",
+          "lines": 3
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "HY",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "3",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        }
+      ]
+    },
+    {
+      "r_height": 220.0,
+      "r_width": 782.0,
+      "row_type": "DataRow",
+      "font_size": 12.0,
+      "cells": [
+        {
+          "c_height": 220.0,
+          "c_width": 48.875,
+          "value": "Asset2 \n- Hous\ne In C\nA(Indi\nan Res\nervatio\nn 10 ye\nar far\nm prop\nerty)",
+          "lines": 10
+        },
+        {
+          "c_height": 44.0,
+          "c_width": 48.875,
+          "value": "01/01/2\n022",
+          "lines": 2
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "150000",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 66.0,
+          "c_width": 48.875,
+          "value": "100 M\nACRS \n150",
+          "lines": 3
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "CA",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "3",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        }
+      ]
+    },
+    {
+      "r_height": 110.0,
+      "r_width": 782.0,
+      "row_type": "DataRow",
+      "font_size": 12.0,
+      "cells": [
+        {
+          "c_height": 110.0,
+          "c_width": 48.875,
+          "value": "Asset3 \n- Car -\nFord(C\nar Pro\nperty)",
+          "lines": 5
+        },
+        {
+          "c_height": 44.0,
+          "c_width": 48.875,
+          "value": "01/01/2\n019",
+          "lines": 2
+        },
+        {
+          "c_height": 44.0,
+          "c_width": 48.875,
+          "value": "100000\n0",
+          "lines": 2
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 66.0,
+          "c_width": 48.875,
+          "value": "100 M\nACRS \n150",
+          "lines": 3
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "ford",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "3",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        }
+      ]
+    },
+    {
+      "r_height": 110.0,
+      "r_width": 782.0,
+      "row_type": "DataRow",
+      "font_size": 12.0,
+      "cells": [
+        {
+          "c_height": 110.0,
+          "c_width": 48.875,
+          "value": "Asset4 \n- Car -\nAudi(C\nar Pro\nperty)",
+          "lines": 5
+        },
+        {
+          "c_height": 44.0,
+          "c_width": 48.875,
+          "value": "01/01/2\n017",
+          "lines": 2
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "150000",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 66.0,
+          "c_width": 48.875,
+          "value": "100 M\nACRS \n150",
+          "lines": 3
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "ford",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "3",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        }
+      ]
+    },
+    {
+      "r_height": 110.0,
+      "r_width": 782.0,
+      "row_type": "DataRow",
+      "font_size": 12.0,
+      "cells": [
+        {
+          "c_height": 110.0,
+          "c_width": 48.875,
+          "value": "Asset5 \n- Car -\nBMW(\nCar Pr\noperty)",
+          "lines": 5
+        },
+        {
+          "c_height": 44.0,
+          "c_width": 48.875,
+          "value": "01/01/2\n015",
+          "lines": 2
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "150000",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 66.0,
+          "c_width": 48.875,
+          "value": "100 M\nACRS \n150",
+          "lines": 3
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "ford",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "3",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        },
+        {
+          "c_height": 22.0,
+          "c_width": 48.875,
+          "value": "0",
+          "lines": 1
+        }
+      ]
+    }
+  ]
+}
