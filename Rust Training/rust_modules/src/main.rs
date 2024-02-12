@@ -10,6 +10,8 @@ mod string_task;
 mod hashmap;
 /// This module contains the table task implementation using lazy_static
 mod lazy_static;
+/// This module contains the tasks related to threads in rust
+mod thread_task; 
 
 
 fn main() {
@@ -20,5 +22,6 @@ fn main() {
     // string_task::main();
     // hashmap::student::main();
     // hashmap::employee::main();
-    lazy_static::main();
+    // lazy_static::main();
+    thread_task::main();
 }
