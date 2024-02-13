@@ -6,6 +6,7 @@ mod common_modules;
 mod request_generator;
 mod request_seperator;
 mod delete_requests;
+mod status_updater;
 
 
 lazy_static! {
@@ -36,6 +37,7 @@ fn load_user_data() -> Vec<User> {
 
 pub fn main() {
     let user_ref1  = Arc::new(&USERS);
+    let user_ref2  = Arc::new(&USERS);
 
     let pending_queue: Arc<RwLock<VecDeque<Request>>> = Arc::new(RwLock::new(VecDeque::new()));
     let pending_ref1: Arc<RwLock<VecDeque<Request>>> = Arc::clone(&pending_queue);
@@ -68,7 +70,15 @@ pub fn main() {
         delete_requests::delete_matched_requests(&user_ref1, &call_ref2, &chat_ref2);
     });
 
+
+    let thread4 = thread::spawn(move || loop {
+        thread::sleep(Duration::from_secs(15));
+        status_updater::update_user_status(&user_ref2);
+    });
+
+
     thread1.join().unwrap();
     thread2.join().unwrap();
     thread3.join().unwrap();
+    thread4.join().unwrap();
 }
