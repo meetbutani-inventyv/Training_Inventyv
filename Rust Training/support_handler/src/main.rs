@@ -7,6 +7,7 @@ mod request_generator;
 mod request_seperator;
 mod delete_requests;
 mod status_updater;
+mod skills_updater;
 
 
 lazy_static! {
@@ -38,6 +39,7 @@ fn load_user_data() -> Vec<User> {
 pub fn main() {
     let user_ref1  = Arc::new(&USERS);
     let user_ref2  = Arc::new(&USERS);
+    let user_ref3  = Arc::new(&USERS);
 
     let pending_queue: Arc<RwLock<VecDeque<Request>>> = Arc::new(RwLock::new(VecDeque::new()));
     let pending_ref1: Arc<RwLock<VecDeque<Request>>> = Arc::clone(&pending_queue);
@@ -77,8 +79,15 @@ pub fn main() {
     });
 
 
+    let thread5 = thread::spawn(move || loop {
+        thread::sleep(Duration::from_secs(30));
+        skills_updater::update_user_skills(&user_ref3);
+    });
+
+
     thread1.join().unwrap();
     thread2.join().unwrap();
     thread3.join().unwrap();
     thread4.join().unwrap();
+    thread5.join().unwrap();
 }
