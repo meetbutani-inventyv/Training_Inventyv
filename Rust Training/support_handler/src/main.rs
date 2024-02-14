@@ -9,6 +9,7 @@ mod delete_requests;
 mod status_updater;
 mod skills_updater;
 mod request_segregator;
+mod monitoring_service;
 
 
 lazy_static! {
@@ -73,6 +74,7 @@ pub fn main() {
 
     let waiting_queue: Arc<RwLock<HashMap<String, VecDeque<Request>>>> = Arc::new(RwLock::new(HashMap::new()));
     let waiting_ref1:Arc<RwLock<HashMap<String, VecDeque<Request>>>> = Arc::clone(&waiting_queue);
+    let waiting_ref2:Arc<RwLock<HashMap<String, VecDeque<Request>>>> = Arc::clone(&waiting_queue);
 
 
     for t in 0..TASKS.len() {
@@ -122,10 +124,17 @@ pub fn main() {
     });
 
 
+    let thread7 = thread::spawn(move || loop {
+        thread::sleep(Duration::from_secs(2));
+        monitoring_service::modify_request_level(&waiting_ref2);
+    });
+
+
     thread1.join().unwrap();
     // thread2.join().unwrap();
     // thread3.join().unwrap();
     thread4.join().unwrap();
     thread5.join().unwrap();
     thread6.join().unwrap();
+    thread7.join().unwrap();
 }
