@@ -1,0 +1,9 @@
+{
+    "database": {
+        "url": "Test Url",
+        "api_key": "test_key"
+    },
+    "website": {
+        "url": "localhost:3000/test"
+    }
+}  

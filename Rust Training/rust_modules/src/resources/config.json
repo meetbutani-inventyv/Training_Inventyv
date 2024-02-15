@@ -1,0 +1,9 @@
+{
+    "database": {
+        "url": "default_url from config",
+        "api_key": "default_key"
+    },
+    "website": {
+        "url": "localhost:3000/home"
+    }
+}  

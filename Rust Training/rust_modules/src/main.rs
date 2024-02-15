@@ -12,6 +12,8 @@ mod hashmap;
 mod lazy_static;
 /// This module contains the tasks related to threads in rust
 mod thread_task; 
+/// Config module to understand the config in rust
+mod config;
 
 
 fn main() {
@@ -23,5 +25,6 @@ fn main() {
     // hashmap::student::main();
     // hashmap::employee::main();
     // lazy_static::main();
-    thread_task::main();
+    // thread_task::main();
+    config::main();
 }

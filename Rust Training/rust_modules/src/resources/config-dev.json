@@ -1,0 +1,9 @@
+{
+    "database": {
+        "url": "Development Url",
+        "api_key": "dev_key"
+    },
+    "website": {
+        "url": "localhost:3000/development"
+    }
+}  
