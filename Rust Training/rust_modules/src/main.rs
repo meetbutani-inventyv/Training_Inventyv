@@ -14,6 +14,8 @@ mod lazy_static;
 mod thread_task; 
 /// Config module to understand the config in rust
 mod config;
+/// This module contains the basic Rest API's for student, employee & users data
+mod basic_crud_api;
 
 
 fn main() {
@@ -26,5 +28,6 @@ fn main() {
     // hashmap::employee::main();
     // lazy_static::main();
     // thread_task::main();
-    config::main();
+    // config::main();
+    basic_crud_api::main();
 }
