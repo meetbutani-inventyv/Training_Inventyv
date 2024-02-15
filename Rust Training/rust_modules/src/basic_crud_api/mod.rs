@@ -6,6 +6,7 @@ use crate::basic_crud_api::routes::get_routes;
 mod routes;
 mod middlewares;
 mod health_check;
+mod student;
 
 
 #[tokio::main]

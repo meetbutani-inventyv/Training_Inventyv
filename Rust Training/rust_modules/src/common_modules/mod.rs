@@ -329,3 +329,29 @@ pub fn calc_char_width(ch:char, font_size:u32) -> f64 {
         return 0.0;
     }
 }
+
+
+
+// ============================== API task ============================== 
+
+/// This structure is used for returning a custom API response
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Message<T> {
+    pub status: u32,
+    pub message_key: String,
+    pub data: T,
+}
+
+
+#[derive(Debug, Serialize, Deserialize, Clone)]
+pub struct Students {
+    pub id: u32,
+    pub name: String,
+    pub phone: String,
+    pub email: String,
+    pub city: String,
+    pub address: String,
+    pub marks: Vec<u32>,
+    pub percentage: Option<f64>,
+    pub grade: Option<String>
+}
