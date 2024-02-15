@@ -7,6 +7,7 @@ mod routes;
 mod middlewares;
 mod health_check;
 mod student;
+mod user;
 
 
 #[tokio::main]
