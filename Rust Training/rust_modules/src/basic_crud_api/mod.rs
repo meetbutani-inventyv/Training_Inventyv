@@ -8,6 +8,7 @@ mod middlewares;
 mod health_check;
 mod student;
 mod user;
+mod employee;
 
 
 #[tokio::main]
