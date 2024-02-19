@@ -18,9 +18,12 @@ mod config;
 mod basic_crud_api;
 /// This module contains the basic utilities
 mod utils;
+/// Module for performing basic operations in TiKV database
+mod tikv_demo;
 
 
-fn main() {
+#[tokio::main]
+async fn main() {
     println!("======== Rust Projects ========\n");
 
     // student::main();
@@ -31,5 +34,6 @@ fn main() {
     // lazy_static::main();
     // thread_task::main();
     // config::main();
-    basic_crud_api::main();
+    // basic_crud_api::main();
+    tikv_demo::main().await;
 }
