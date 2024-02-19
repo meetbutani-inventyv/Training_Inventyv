@@ -20,7 +20,6 @@ pub async fn main() {
 
     // Fetching all data from TiKV
     let value = get_record("student".to_string()).await;
-    println!("--{:?}", value.as_str());
     let value:Vec<Student> = serde_json::from_str(value.as_str()).unwrap();
     println!("{:?}", value);
 
