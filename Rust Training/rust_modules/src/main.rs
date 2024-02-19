@@ -16,6 +16,8 @@ mod thread_task;
 mod config;
 /// This module contains the basic Rest API's for student, employee & users data
 mod basic_crud_api;
+/// This module contains the basic utilities
+mod utils;
 
 
 fn main() {
