@@ -1,0 +1,62 @@
+syntax = "proto3";
+package student;
+
+/// Service for student
+service Student {
+    rpc addStudent(AddStudentRequest) returns (StudentResponse);
+    rpc getStudent(GetStudentRequest) returns (StudentResponse);
+    rpc updateStudent(UpdateStudentRequest) returns (StudentResponse);
+    rpc deleteStudent(DeleteStudentRequest) returns (StudentResponse);
+}
+
+
+// message StudentData {
+//     uint32 id = 1;
+//     string name = 2;
+//     string phone = 3;
+//     string email = 4;
+//     string city = 5;
+//     string address = 6;
+//     repeated uint32 marks = 7;
+//     double percentage = 8;
+//     string grade = 9;
+// }
+
+
+message GetStudentRequest {
+    uint32 id = 1;
+}
+
+message AddStudentRequest {
+    uint32 id = 1;
+    string name = 2;
+    string phone = 3;
+    string email = 4;
+    string city = 5;
+    string address = 6;
+    repeated uint32 marks = 7;
+    double percentage = 8;
+    string grade = 9;
+}
+
+message UpdateStudentRequest {
+    uint32 id = 1;
+    string name = 2;
+    string phone = 3;
+    string email = 4;
+    string city = 5;
+    string address = 6;
+    repeated uint32 marks = 7;
+    double percentage = 8;
+    string grade = 9;
+}
+
+message DeleteStudentRequest {
+    uint32 id = 1;
+}
+
+message StudentResponse {
+    uint32 status = 1;
+    string message = 2;
+    string data = 3;
+}

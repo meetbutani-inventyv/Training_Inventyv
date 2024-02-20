@@ -1,0 +1,22 @@
+[package]
+name = "grpc_server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+lazy_static = "1.4.0"
+serde_json = "1.0.111"
+serde = {version="1.0.195", features=["derive"]}
+
+tokio = { version = "1.0", features = ["full"] }
+hyper = "0.14.28"
+tower-http = { version = "0.3.0", features = ["cors", "trace"] } # added
+axum = { version = "0.6.4", features = ["multipart"] }
+tower = { version = "0.4.13", features = ["full"]}
+tonic = "0.11"
+prost = "0.12.3"
+
+[build-dependencies]
+tonic-build = "0.11"
