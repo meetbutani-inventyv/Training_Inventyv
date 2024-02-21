@@ -1,8 +1,8 @@
 use tonic::{Response, Request, Status};
-use student::{GetStudentRequest, AddStudentRequest, StudentResponse};
+use student::{GetStudentRequest, GetAllStudentRequest, AddStudentRequest, StudentResponse};
 use self::student::{student_server::Student, DeleteStudentRequest, UpdateStudentRequest};
 use models::StudentJson;
-use services::{create_student, read_student, update_student, delete_student};
+use services::{create_student, read_student, read_all_student, update_student, delete_student};
 
 pub mod services;
 pub mod models;
@@ -52,6 +52,30 @@ impl Student for MyStudent {
         //     percentage: student.percentage.unwrap(),
         //     grade: student.grade.unwrap()
         // };
+    }
+
+
+    async fn get_all_student(&self, request: Request<GetAllStudentRequest>) -> Result<Response<StudentResponse>, Status> {
+        match read_all_student().await {
+            Ok(student) => {
+                let response = StudentResponse {
+                    status: 2000,
+                    message: "Success fetching the user".to_string(),
+                    data: serde_json::to_string(&student).unwrap()
+                };
+            
+                Ok(Response::new(response))
+            },
+            Err(_) => {
+                let response = StudentResponse {
+                    status: 2000,
+                    message: "No such user found".to_string(),
+                    data: "".to_string()
+                };
+            
+                Ok(Response::new(response))
+            }
+        }
     }
 
 
@@ -135,7 +159,7 @@ impl Student for MyStudent {
         let user_id = request.into_inner().id;
 
         match delete_student(user_id).await {
-            Ok(student) => {
+            Ok(_) => {
                 let response = StudentResponse {
                     status: 2000,
                     message: "Success deleting the user".to_string(),

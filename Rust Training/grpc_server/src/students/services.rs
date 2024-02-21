@@ -31,13 +31,26 @@ fn load_student_data() -> VecDeque<StudentJson> {
 
 /// Function to get the data of a student
 pub async fn read_student(id: u32) -> Result<StudentJson, String> {
-    let mut all_users = STUDENTS.write().unwrap();
+    let all_users = STUDENTS.write().unwrap();
 
     if let Some(idx) = all_users.iter().position(|user| user.id == id) {
         Ok(all_users.get(idx).unwrap().clone())
     }
     else {
         Err("No such student exists".to_string())
+    }
+}
+
+
+/// Function to get the data of all students
+pub async fn read_all_student() -> Result<VecDeque<StudentJson>, String> {
+    let all_users = STUDENTS.read().unwrap();
+
+    if all_users.len()>0 {
+        Ok(all_users.clone())
+    }
+    else {    
+        Err("Error fetching all the students".to_string())
     }
 }
 

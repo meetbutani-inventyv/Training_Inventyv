@@ -5,6 +5,7 @@ package student;
 service Student {
     rpc addStudent(AddStudentRequest) returns (StudentResponse);
     rpc getStudent(GetStudentRequest) returns (StudentResponse);
+    rpc getAllStudent(GetAllStudentRequest) returns (StudentResponse);
     rpc updateStudent(UpdateStudentRequest) returns (StudentResponse);
     rpc deleteStudent(DeleteStudentRequest) returns (StudentResponse);
 }
@@ -25,6 +26,10 @@ service Student {
 
 message GetStudentRequest {
     uint32 id = 1;
+}
+
+message GetAllStudentRequest {
+    
 }
 
 message AddStudentRequest {
