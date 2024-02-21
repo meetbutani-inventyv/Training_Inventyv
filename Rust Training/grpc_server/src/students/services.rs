@@ -31,10 +31,10 @@ fn load_student_data() -> VecDeque<StudentJson> {
 
 /// Function to get the data of a student
 pub async fn read_student(id: u32) -> Result<StudentJson, String> {
-    let all_users = STUDENTS.write().unwrap();
+    let all_students = STUDENTS.write().unwrap();
 
-    if let Some(idx) = all_users.iter().position(|user| user.id == id) {
-        Ok(all_users.get(idx).unwrap().clone())
+    if let Some(idx) = all_students.iter().position(|user| user.id == id) {
+        Ok(all_students.get(idx).unwrap().clone())
     }
     else {
         Err("No such student exists".to_string())
@@ -44,10 +44,10 @@ pub async fn read_student(id: u32) -> Result<StudentJson, String> {
 
 /// Function to get the data of all students
 pub async fn read_all_student() -> Result<VecDeque<StudentJson>, String> {
-    let all_users = STUDENTS.read().unwrap();
+    let all_students = STUDENTS.read().unwrap();
 
-    if all_users.len()>0 {
-        Ok(all_users.clone())
+    if all_students.len()>0 {
+        Ok(all_students.clone())
     }
     else {    
         Err("Error fetching all the students".to_string())
@@ -57,40 +57,40 @@ pub async fn read_all_student() -> Result<VecDeque<StudentJson>, String> {
 
 /// Function to add a new student
 pub async fn create_student(student: StudentJson) -> Result<String, String> {
-    let all_users = STUDENTS.write().unwrap().clone();
+    let all_students = STUDENTS.write().unwrap().clone();
 
-    if all_users.iter().any(|user| user.id == student.id) {
-        Err("Conflicting user id".to_string())
+    if all_students.iter().any(|user| user.id == student.id) {
+        Err("Conflicting student id".to_string())
     }
     else {
         STUDENTS.write().unwrap().push_back(student);
-        Ok("New User added successfully".to_string())
+        Ok("New Student added successfully".to_string())
     }
 }
 
 
 /// Function to update the student data
 pub async fn update_student(student: StudentJson) -> Result<String, String> {
-    let mut all_users = STUDENTS.write().unwrap().clone();
+    let mut all_students = STUDENTS.write().unwrap();
 
-    if let Some(user) = all_users.iter_mut().find(|user| user.id == student.id) {
+    if let Some(user) = all_students.iter_mut().find(|user| user.id == student.id) {
         *user = student.clone();
-        Ok("User updates successfully".to_string())
+        Ok("Student updated successfully".to_string())
     }
     else {
         STUDENTS.write().unwrap().push_back(student);
-        Err("New User added instead of updating".to_string())
+        Err("New Student added instead of updating".to_string())
     }
 }
 
 
 /// Function to delete a student
 pub async fn delete_student(id: u32) -> Result<String, String> {
-    let all_users = STUDENTS.write().unwrap().clone();
+    let all_students = STUDENTS.write().unwrap().clone();
 
-    if let Some(idx) = all_users.iter().position(|user| user.id == id) {
+    if let Some(idx) = all_students.iter().position(|user| user.id == id) {
         STUDENTS.write().unwrap().remove(idx);
-        Ok("User removed successfully".to_string())
+        Ok("Student removed successfully".to_string())
     }
     else {
         Err("No such student found to delete".to_string())
