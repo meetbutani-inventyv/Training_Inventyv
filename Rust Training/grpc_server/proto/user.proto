@@ -1,0 +1,71 @@
+syntax = "proto3";
+package user;
+
+/// Service for User
+service User {
+    rpc addUser(AddUserRequest) returns (UserResponse);
+    rpc getUser(GetUserRequest) returns (UserResponse);
+    rpc getAllUser(GetAllUserRequest) returns (UserResponse);
+    rpc updateUser(UpdateUserRequest) returns (UserResponse);
+    rpc deleteUser(DeleteUserRequest) returns (UserResponse);
+}
+
+
+message GetUserRequest {
+    uint32 id = 1;
+}
+
+message GetAllUserRequest {
+
+}
+
+enum Status {
+    Online = 0;
+    Offline = 1;
+}
+
+enum Language {
+    English = 0;
+    Spanish = 1;
+}
+
+enum UserSkills {
+    CustomerService = 0;
+    ProblemSolving = 1;
+    ProductKnowledge = 2;
+    EffectiveCommunication = 3;
+    TimeManagement = 4;
+    Adaptability = 5;
+    TeamCollaboration = 6;
+    FeedbackAnalysis = 7;
+    ProactiveEngagement = 8;
+    TechnicalProficiency = 9;
+    CulturalSensitivity = 10;
+    Documentation = 11;
+}
+
+message AddUserRequest {
+    uint32 id = 1;
+    string name = 2;
+    repeated UserSkills skills = 3;
+    Status status = 4;
+    Language language = 5;
+}
+
+message UpdateUserRequest {
+    uint32 id = 1;
+    string name = 2;
+    repeated UserSkills skills = 3;
+    Status status = 4;
+    Language language = 5;
+}
+
+message DeleteUserRequest {
+    uint32 id = 1;
+}
+
+message UserResponse {
+    uint32 status = 1;
+    string message = 2;
+    string data = 3;
+}
