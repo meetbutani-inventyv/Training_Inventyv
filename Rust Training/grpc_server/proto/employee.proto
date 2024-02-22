@@ -1,0 +1,64 @@
+syntax = "proto3";
+package employee;
+
+/// Service for Employee
+service Employee {
+    rpc addEmployee(AddEmployeeRequest) returns (EmployeeResponse);
+    rpc getEmployee(GetEmployeeRequest) returns (EmployeeResponse);
+    rpc getAllEmployee(GetAllEmployeeRequest) returns (EmployeeResponse);
+    rpc updateEmployee(UpdateEmployeeRequest) returns (EmployeeResponse);
+    rpc deleteEmployee(DeleteEmployeeRequest) returns (EmployeeResponse);
+}
+
+
+message GetEmployeeRequest {
+    uint32 id = 1;
+}
+
+message GetAllEmployeeRequest {
+
+}
+
+enum Position {
+    SoftwareDeveloper = 0;
+    JrSoftwareDeveloper = 1;
+    SrSoftwareDeveloper = 2;
+    TeamLead = 3;
+    ProjectManager = 4;
+}
+
+enum Skills {
+    C = 0;
+    CS = 1;
+    Rust = 2;
+    Java = 3;
+    Python = 4;
+}
+
+message AddEmployeeRequest {
+    uint32 id = 1;
+    string name = 2;
+    uint32 age = 3;
+    repeated Skills skills = 4;
+    Position position = 5;
+    uint32 experiance = 6;
+}
+
+message UpdateEmployeeRequest {
+    uint32 id = 1;
+    string name = 2;
+    uint32 age = 3;
+    repeated Skills skills = 4;
+    Position position = 5;
+    uint32 experiance = 6;
+}
+
+message DeleteEmployeeRequest {
+    uint32 id = 1;
+}
+
+message EmployeeResponse {
+    uint32 status = 1;
+    string message = 2;
+    string data = 3;
+}
